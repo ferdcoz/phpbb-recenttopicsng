@@ -4,7 +4,7 @@
  * Recent Topics NG. An extension for the phpBB Forum Software package.
  *
  * @copyright (c) 2022, IMC, https://github.com/IMC-GER / LukeWCS, https://github.com/LukeWCS
- * @copyright (c) 2026, Fernando Coz, Moderno integration
+ * @copyright (c) 2026, Fernando Coz, modern style integration
  * @copyright (c) 2017, Sajaki, https://www.avathar.be
  * @copyright (c) 2015, PayBas
  * @license GNU General Public License, version 2 (GPL-2.0-only)
@@ -101,7 +101,7 @@ class rtng_functions
 				'S_RTNG_LOCATION_TOP'	 => $this->user_setting['user_rtng_location'] == 'RTNG_TOP',
 				'S_RTNG_LOCATION_BOTTOM' => $this->user_setting['user_rtng_location'] == 'RTNG_BOTTOM',
 				'S_RTNG_LOCATION_SIDE'	 => $this->user_setting['user_rtng_location'] == 'RTNG_SIDE',
-				'S_RTNG_MODERNO'		 => ($this->user->style['style_path'] ?? '') === 'modern',
+				'S_RTNG_MODERN'		 => ($this->user->style['style_path'] ?? '') === 'modern',
 				strtoupper($tpl_loopname) . '_DISPLAY' => true,
 			]
 		);

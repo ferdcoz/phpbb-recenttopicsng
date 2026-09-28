@@ -1,9 +1,9 @@
 {
     "name": "ferdcoz/recenttopicsng",
     "type": "phpbb-extension",
-    "description": "Recent Topics NG fork maintained by Fernando Coz, with Moderno styling and registered-member access.",
+    "description": "Recent Topics NG fork maintained by Fernando Coz, with modern style integration and registered-member access.",
     "homepage": "https://github.com/ferdcoz/phpbb-recenttopicsng",
-    "version": "1.2.0-ferdcoz.5",
+    "version": "1.2.0-ferdcoz.6",
     "time": "2026-05-01",
     "license": "GPL-2.0-only",
     "authors": [

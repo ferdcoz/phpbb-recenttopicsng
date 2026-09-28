@@ -4,7 +4,7 @@
  * Recent Topics NG. An extension for the phpBB Forum Software package.
  *
  * @copyright (c) 2022, IMC, https://github.com/IMC-GER / LukeWCS, https://github.com/LukeWCS
- * @copyright (c) 2026, Fernando Coz, Moderno integration and registered-only access
+ * @copyright (c) 2026, Fernando Coz, modern style integration and registered-only access
  * @copyright (c) 2017, Sajaki, https://www.avathar.be
  * @copyright (c) 2015, PayBas
  * @license GNU General Public License, version 2 (GPL-2.0-only)

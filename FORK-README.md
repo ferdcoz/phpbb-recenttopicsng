@@ -1,6 +1,6 @@
 # Recent Topics NG — ferdcoz fork
 
-This local phpBB extension fork is based on Recent Topics NG 1.2.0, upstream
+This phpBB extension fork is based on Recent Topics NG 1.2.0, upstream
 tag `v1.2.0`, commit `b0c1969fb1a4c208478b3773d9b94f84086502fc`.
 
 Maintainer/developer: Fernando Coz (`ferdcoz`). Upstream authorship and the
@@ -22,4 +22,4 @@ GPL-2.0 license notice are retained.
 - Sets topic titles and metadata to sizes aligned with the supported style's
   forum rows.
 
-Package: `ferdcoz/recenttopicsng`; current local fork version: `1.2.0-ferdcoz.5`.
+Package: `ferdcoz/recenttopicsng`; current local fork version: `1.2.0-ferdcoz.6`.

@@ -35,11 +35,11 @@ class s_1_0_0 extends \phpbb\db\migration\migration
 					'user_rtng_unread_only'				=> ['BOOL', 0],
 					'user_rtng_disp_last_post'			=> ['BOOL', 0],
 					'user_rtng_disp_first_unrd_post'	=> ['BOOL', 0],
-					'user_rtng_location'				=> ['VCHAR:15', 'RTNG_TOP'],
+					'user_rtng_location'				=> ['VCHAR:15', 'RTNG_BOTTOM'],
 					'user_rtng_index_topics_qty'		=> ['UINT', 10],
-					'user_rtng_index_page_qty'			=> ['UINT', 3],
+					'user_rtng_index_page_qty'			=> ['UINT', 1],
 					'user_rtng_separate_topics_qty'		=> ['UINT', 10],
-					'user_rtng_separate_page_qty'		=> ['UINT', 3],
+					'user_rtng_separate_page_qty'		=> ['UINT', 1],
 				],
 
 				FORUMS_TABLE => [
