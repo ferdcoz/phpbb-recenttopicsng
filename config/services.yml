@@ -1,0 +1,89 @@
+services:
+    ferdcoz.recenttopicsng.controller.page_controller:
+        class: ferdcoz\recenttopicsng\controller\page_controller
+        arguments:
+            - '@config'
+            - '@template'
+            - '@controller.helper'
+            - '@language'
+            - '@auth'
+            - '@ferdcoz.recenttopicsng.functions'
+            - '@ferdcoz.recenttopicsng.controller_common'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+
+    ferdcoz.recenttopicsng.admin.controller:
+        class: ferdcoz\recenttopicsng\controller\admin_controller
+        arguments:
+            - '@config'
+            - '@template'
+            - '@language'
+            - '@request'
+            - '@dbal.conn' 
+            - '@cache.driver'
+            - '@controller.helper'
+            - '@ferdcoz.recenttopicsng.controller_common'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+
+    ferdcoz.recenttopicsng.controller_common:
+        class: ferdcoz\recenttopicsng\controller\controller_common
+        arguments:
+            - '@user'
+            - '@auth'
+            - '@dbal.conn'
+            - '@config'
+            - '@ext.manager' 
+
+    ferdcoz.recenttopicsng.functions:
+        class: ferdcoz\recenttopicsng\core\rtng_functions
+        arguments:
+            - '@auth'
+            - '@cache'
+            - '@config'
+            - '@language'
+            - '@content.visibility'
+            - '@dbal.conn'
+            - '@dispatcher'
+            - '@pagination'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '@ferdcoz.recenttopicsng.controller_common'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+
+    ferdcoz.recenttopicsng.main_listener:
+        class: ferdcoz\recenttopicsng\event\main_listener
+        arguments:
+            - '@ferdcoz.recenttopicsng.functions'
+            - '@template'
+            - '@controller.helper'
+            - '@language'
+            - '@auth'
+            - '@ferdcoz.recenttopicsng.controller_common'
+            - '@?phpbb.collapsiblecategories.operator'
+        tags:
+            - { name: event.listener }
+
+    ferdcoz.recenttopicsng.acp_listener:
+        class: ferdcoz\recenttopicsng\event\acp_listener
+        arguments:
+            - '@template'
+            - '@request'
+            - '@ferdcoz.recenttopicsng.controller_common'
+        tags:
+            - { name: event.listener }
+
+    ferdcoz.recenttopicsng.ucp_listener:
+        class: ferdcoz\recenttopicsng\event\ucp_listener
+        arguments:
+            - '@auth'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '@language'
+            - '@dbal.conn'
+            - '@ferdcoz.recenttopicsng.controller_common'
+        tags:
+            - { name: event.listener }

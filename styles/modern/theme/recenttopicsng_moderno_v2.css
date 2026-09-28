@@ -1,0 +1,65 @@
+/* Moderno-specific presentation for Recent Topics NG. */
+#rtng-box {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+#rtng-box .topiclist.topics .list-inner {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+#rtng-box li.header dt .list-inner,
+#rtng-box li.header dt .list-inner a {
+	font-size: 14px;
+	line-height: 1em;
+}
+
+#rtng-box li.header dd {
+	left: 5px;
+	position: relative;
+}
+
+#rtng-box li.header dd.lastpost {
+	line-height: 1em;
+}
+
+#rtng-box a.topictitle {
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#rtng-box .topiclist dd.posts,
+#rtng-box .topiclist dd.views {
+	font-size: 14px;
+	text-align: center;
+}
+
+#rtng-box .topiclist dd.lastpost {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+#rtng-box .topiclist dd.lastpost time {
+	font-size: 11.2px;
+}
+
+#rtng-box .lastpost-avatar {
+	display: inline;
+	line-height: inherit;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+#rtng-box .lastpost-avatar .avatar {
+	display: inline;
+	height: 16px;
+	object-fit: cover;
+	vertical-align: sub;
+	width: 16px;
+}
+
+#rtng-box .lastpost .fa-calendar-o {
+	margin-right: 2px;
+}

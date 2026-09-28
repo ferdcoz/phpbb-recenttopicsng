@@ -1,0 +1,49 @@
+{
+    "name": "ferdcoz/recenttopicsng",
+    "type": "phpbb-extension",
+    "description": "Recent Topics NG fork maintained by Fernando Coz, with Moderno styling and registered-member access.",
+    "homepage": "https://github.com/ferdcoz/phpbb-recenttopicsng",
+    "version": "1.2.0-ferdcoz.5",
+    "time": "2026-05-01",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Fernando Coz",
+            "homepage": "https://github.com/ferdcoz",
+            "role": "Developer"
+        },
+        {
+            "name": "Thorsten Ahlers",
+            "homepage": "https://github.com/IMC-GER",
+            "role": "Developer"
+        },
+        {
+            "name": "LukeWCS",
+            "homepage": "https://github.com/LukeWCS",
+            "role": "Developer"
+        },
+        {
+            "name": "Andreas Vandenberghe",
+            "homepage": "https://www.avathar.be",
+            "role": "Previous Developer"
+        },
+        {
+            "name": "PayBas",
+            "role": "Previous developer"
+        },
+        {
+            "name": "nickvergessen",
+            "role": "Previous developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0,<8.6.0@dev",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Recent Topics NG",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.3.5,<3.4.0@dev"
+        }
+    }
+}

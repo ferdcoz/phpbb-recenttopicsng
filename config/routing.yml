@@ -1,0 +1,4 @@
+ferdcoz_recenttopicsng_page_controller:
+    path: /rtng/{page}
+    defaults:
+        _controller: 'ferdcoz.recenttopicsng.controller.page_controller:display'
